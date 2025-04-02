@@ -1,12 +1,19 @@
-from flask import Flask, request, render_template
-import _mysql_connector
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template ("index.html")
+    return render_template('index.html')
 
-@app.route("/Agregar")
-def Agregar_Clientes():
-    return render_template ("Agregar_Clientes.html")
+@app.route('/clientes', methods=['GET', 'POST'])
+def clientes():
+    return render_template('clientes.html')
+
+@app.route('/productos', methods=['GET', 'POST'])
+def productos():
+    return render_template('productos.html')
+
+@app.route('/historial', methods=['GET', 'POST'])
+def historial():
+    return render_template('historial.html')
