@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MR Electronics - Material</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d1130;
+      background-image: url('https://img.freepik.com/vector-premium/iconos-reparacion-ilustracion-vectorial-fondo-diseno-grafico-creativo-telon-fondo-azul-oscuro_526236-1152.jpg'); /* patrón de fondo decorativo */
+      color: white;
+    }
+
+    .navbar {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .navbar a, .navbar span {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #FFD700;
+    }
+
+    .form-container {
+      background-color: #003f66;
+      margin: 50px auto;
+      padding: 30px;
+      width: 80%;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 15px #000;
+    }
+
+    .form-container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 30px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">🔧 MR Electronics</div>
+    <div>
+      <a href="#">INICIO</a>
+      <a href="#">CLIENTES</a>
+      <a href="#">PRODUCTOS</a>
+      <a href="#">SERVICIOS</a>
+      <a href="#">INVENTARIO</a>
+      <span>JUAN PECH</span>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <h2>🛠️ MATERIAL</h2>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nombre">NOMBRE DE MATERIAL</label>
+        <input type="text" id="nombre" placeholder="">
+      </div>
+      <div class="form-group">
+        <label for="cantidad">CANTIDAD</label>
+        <select id="cantidad">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+    <button>AÑADIR</button>
+  </div>
+
+</body>
+</html>
